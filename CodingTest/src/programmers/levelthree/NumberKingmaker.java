@@ -116,10 +116,7 @@ class Solution {
             }
         
         /* 
-        
         제일 작은 값을 지운다.
-        
-        
         */
         
         answer = strBuf.toString();
