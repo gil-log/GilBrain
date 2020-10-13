@@ -2,6 +2,8 @@ package programmers.levelthree;
 
 import java.util.Scanner;
 
+import programmers.leveltwo.Solution;
+
 //https://programmers.co.kr/learn/courses/30/lessons/12900
 
 public class TwoNTyling {

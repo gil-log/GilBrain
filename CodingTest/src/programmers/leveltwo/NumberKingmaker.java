@@ -1,4 +1,4 @@
-package programmers.levelthree;
+package programmers.leveltwo;
 
 import java.util.*;
 
