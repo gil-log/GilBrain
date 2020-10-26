@@ -11,7 +11,7 @@ public class KIndexSortiong {
 
 
 
-class Solution {
+final class Solution {
     public int[] solution(int[] array, int[][] commands) {
        
         int leng = commands.length;
@@ -25,19 +25,19 @@ class Solution {
         int findLoc = 0;
         int index = 0;
         
-        // ½ÃÀÛ ÁöÁ¡, ³¡ ÁöÁ¡ commands[0~Âß] ÀÐ´ÂÁß
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ commands[0~ï¿½ï¿½] ï¿½Ð´ï¿½ï¿½ï¿½
         for(int i = 0 ; i < leng ; i ++){
-            // ÀÎµ¦½º´Ï±î -1 ÇØÁÖ¾úÀ½
+            // ï¿½Îµï¿½ï¿½ï¿½ï¿½Ï±ï¿½ -1 ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½
             start = commands[i][0] - 1;
             end = commands[i][1] - 1;
             cutLeng = end - start + 1;
             findLoc = commands[i][2];
             
-            // µé¾î°¥ °³¼ö´Ï±î
+            // ï¿½ï¿½î°¥ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
             int tempArr[] = new int[cutLeng];
             
-            // Àß¶ó¾ß ÇÏ´Â ÀÎµ¦½º È®ÀÎ
-            // ¸¶Áö¸· ²¨°¡ ¾Èµé¾î°¡´Â »óÈ²ÀÓ
+            // ï¿½ß¶ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½Îµï¿½ï¿½ï¿½ È®ï¿½ï¿½
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Èµï¿½î°¡ï¿½ï¿½ ï¿½ï¿½È²ï¿½ï¿½
             for(int j = 0 ; j < cutLeng; j ++){
                 tempArr[j] = array[start];
                 start++;

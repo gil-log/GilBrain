@@ -4,10 +4,10 @@ import java.util.TreeSet;
 import java.util.Iterator;
 
 //https://programmers.co.kr/learn/courses/30/lessons/12910
-class Solution {
+final class Solution {
     public int[] solution(int[] arr, int divisor) {
         
-        //º¯¼ö ÀÚ·áÇü ¹è¿­¸í[] = Set¸í.toArray(new º¯¼ö ÀÚ·áÇü[Set¸í.size()]); 
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½[] = Setï¿½ï¿½.toArray(new ï¿½ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½ï¿½[Setï¿½ï¿½.size()]); 
         
         Set<Integer> treeSet = new TreeSet<Integer>();
         

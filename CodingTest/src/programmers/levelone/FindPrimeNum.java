@@ -3,8 +3,7 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 
 public class FindPrimeNum {
-
-    class Solution {
+    final class Solution {
         public int solution(int n) {
             int answer = 3;
 

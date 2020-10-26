@@ -8,7 +8,7 @@ public class TwoNumberPickPlus {
 
 
 
-class Solution {
+final class Solution {
     public int[] solution(int[] numbers) {
         
         int len = numbers.length;
@@ -64,7 +64,7 @@ class Solution {
 
 /*
 
-//HashSet ÀÌ¿ë
+//HashSet ï¿½Ì¿ï¿½
 import java.util.HashSet;
 import java.util.Set;
 

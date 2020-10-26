@@ -1,7 +1,7 @@
 package programmers.levelone;
 
 //https://programmers.co.kr/learn/courses/30/lessons/12918
-class Solution {
+final class Solution {
     public boolean solution(String s) {
         boolean answer = false;
 

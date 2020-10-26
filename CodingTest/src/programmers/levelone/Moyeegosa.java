@@ -7,7 +7,7 @@ public class Moyeegosa {
 
 }
 
-class Solution {
+final class Solution {
     public int[] solution(int[] answers) {
         
         LinkedList<Integer> one = new LinkedList<Integer>(Arrays.asList(1,2,3,4,5));

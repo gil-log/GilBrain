@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //https://programmers.co.kr/learn/courses/30/lessons/12915
-class Solution {
+final class Solution {
     public String[] solution(String[] strings, int n) {
         
         int leng = strings.length;
