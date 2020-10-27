@@ -6,7 +6,6 @@ final class Solution {
         String answer = "";
         
         int oddFlag = 0;
-        int spaceFlag = 0;
         char oneLetter = 'a';
         int letterCode = 0;
         
