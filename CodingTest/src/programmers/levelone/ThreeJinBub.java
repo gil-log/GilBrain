@@ -6,7 +6,7 @@ public class ThreeJinBub {
 
 }
 
-class Solution {
+final class Solution {
     public int solution(int n) {
         int answer = 0;
         

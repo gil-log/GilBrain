@@ -6,7 +6,7 @@ public class Crain {
 
 }
 
-class Solution {
+final class Solution {
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
         
@@ -25,7 +25,7 @@ class Solution {
         for(int j = 0 ; j < moves.length; j++){
             for(int i = 0 ; i < board.length; i++){
                 
-                // ¸Þ¸ð¶óÀÌÁ¯
+                // ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 if(load[moves[j]-1] > 0)
                     i = load[moves[j]-1];
                 

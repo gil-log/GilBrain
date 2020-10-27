@@ -4,7 +4,7 @@ public class CenterTextGetting {
 
 }
 //https://programmers.co.kr/learn/courses/30/lessons/12903
-class Solution {
+final class Solution {
  public String solution(String s) {
      String answer = "";
      

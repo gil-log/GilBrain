@@ -1,7 +1,7 @@
 package programmers.levelone;
 import java.util.Arrays;
 //https://programmers.co.kr/learn/courses/30/lessons/12917
-class Solution {
+final class Solution {
   public String solution(String s) {
       String answer = "";
       

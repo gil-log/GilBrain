@@ -1,6 +1,6 @@
 package programmers.levelone;
 //https://programmers.co.kr/learn/courses/30/lessons/12912
-class Solution {
+final class Solution {
   public long solution(int a, int b) {
       
       long answer = 0;

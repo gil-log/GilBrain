@@ -7,7 +7,7 @@ public class NoCompletion {
 	
 }
 
-class Solution {
+final class Solution {
     public String solution(String[] participant, String[] completion) {
         Map<String, Integer> hash = new HashMap<>();
         

@@ -8,7 +8,7 @@ public class HatingSameNumber {
 }
 
 //https://programmers.co.kr/learn/courses/30/lessons/12906
-public class Solution {
+final class Solution {
     public int[] solution(int []arr) {
         
         Queue <Integer> queue = new LinkedList<>();

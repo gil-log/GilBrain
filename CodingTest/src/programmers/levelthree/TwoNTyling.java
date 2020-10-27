@@ -18,7 +18,7 @@ public class TwoNTyling {
 	}
 }
 
-class Solution {
+final class Solution {
 	/*
 	 * public int solution(int n) { int answer = 0; if(n == 2 || n==1) { return
 	 * answer = 1; } double to = 1; double o = n; long ban = 1; for(int i = 1; i <=

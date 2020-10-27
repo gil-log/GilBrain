@@ -8,7 +8,7 @@ public class GymSuit {
 }
 
 
-class Solution {
+final class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n - lost.length;
         

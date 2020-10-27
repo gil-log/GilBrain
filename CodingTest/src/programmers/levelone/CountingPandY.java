@@ -1,6 +1,6 @@
 package programmers.levelone;
 //https://programmers.co.kr/learn/courses/30/lessons/12916
-class Solution {
+final class Solution {
   boolean solution(String s) {
       int sum = 0 ;
       
