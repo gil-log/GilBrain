@@ -8,7 +8,8 @@ public interface GillogInterface {
     int level = 1;
 
     // abstract method
-    abstract int develop(boolean choice);
+    // abstract는 생략 가능하다.
+    public abstract int develop(boolean choice);
 
     // default method
     default void gillog(Date date) {
