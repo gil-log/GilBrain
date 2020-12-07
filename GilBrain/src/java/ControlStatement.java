@@ -12,5 +12,8 @@ public class ControlStatement {
             System.out.println("형!");
         }
 
+        for (int i = 0; i < 27; i++) {
+            System.out.println(i);
+        }
     }
 }
