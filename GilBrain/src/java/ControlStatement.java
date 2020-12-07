@@ -38,5 +38,9 @@ public class ControlStatement {
         for (int i = 0; i < 27; i++) {
             System.out.println(i);
         }
+
+        do {
+            System.out.println("무조건 한번은 실행");
+        } while (false);
     }
 }
