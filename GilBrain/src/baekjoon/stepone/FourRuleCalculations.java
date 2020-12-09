@@ -1,8 +1,8 @@
 package baekjoon.stepone;
 
-import java.util.Scanner;
-
 //https://www.acmicpc.net/problem/10869
+
+import java.util.Scanner;
 
 public class FourRuleCalculations {
     public static void main(String[] args) {
