@@ -1,5 +1,7 @@
 package baekjoon.stepone;
 
+//https://www.acmicpc.net/problem/10430
+
 import java.util.Scanner;
 
 public class Remainder {
