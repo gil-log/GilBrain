@@ -1,6 +1,6 @@
 package baekjoon.stepone;
 
-//
+//https://www.acmicpc.net/problem/10172
 public class Dog {
 
     public static void main(String[] args) {
