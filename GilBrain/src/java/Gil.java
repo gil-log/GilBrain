@@ -11,3 +11,4 @@ class Gillog {
         System.out.println("logging is " + number);
     }
 }
+
