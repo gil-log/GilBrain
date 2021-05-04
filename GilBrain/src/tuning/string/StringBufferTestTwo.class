@@ -1,0 +1,19 @@
+
+public class StringBufferTestTwo {
+    public static void main (String args[]) {
+        StringBuffer sb = new StringBuffer();
+
+        sb.append("GIL");
+        sb.append("LOG");
+        sb.append("GILLOG");
+
+        sb.append("this")
+        .append("way")
+        .append("can")
+        .append("work");
+
+        sb.append("ButDo"+"Not"+"ThisWay");
+        sb.insert(1,"|||");
+        System.out.println(sb);
+    }
+}
