@@ -1,0 +1,13 @@
+
+public class StringBufferTest {
+    public static void main(String args[]) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Gillog");
+        StringBufferTest stringBufferTest = new StringBufferTest();
+        stringBufferTest.check(sb);
+    }
+    public void check(CharSequence cs) {
+        StringBuffer sb = new StringBuffer(cs);
+        System.out.println("sb.length=="+sb.length());
+    }
+}
