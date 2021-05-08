@@ -16,9 +16,12 @@
 
 <br>
 
+
+
 실제로 **`VLOOKUP`을 활용** 할 때는 아래와 같이 **`Wild Card`를 활용하여 문자가 포함된** 컬럼을 찾아 **그 컬럼의 다른 항목 값을 가져오는 등 다양하게 활용 가능**하다. 
 
 ![](https://images.velog.io/images/gillog/post/ecfed4e1-44ea-4cb7-a286-b85ddfe55835/20210501_160305.png)
+
 
 
 ```
