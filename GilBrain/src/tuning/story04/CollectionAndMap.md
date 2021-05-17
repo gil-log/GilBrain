@@ -87,3 +87,30 @@
 |ArrayList|**Vector와 비슷**하지만, **동기화 처리가 되어 있지 않다.**|
 |LinkedList|**ArrayList와 동일**하지만, **`Queue` Interface를 구현**했기 때문에, **FIFO Queue 작업을 수행**한다.|
 
+---
+
+## Map Interface
+
+**`Map` Interface는 `Key`, `Value` 쌍으로 저장되는 구조체**이다.
+
+**단일 객체만 저장되는 다른 `Collection`과는 다르게 따로 분리**되어 있다.
+
+**`Map` Interface는** ID와 PassWord, Code와 이름 등 **고유한 값과 그 값을 설명하는 Data를 보관할 때 유용**하다.
+
+**`Map` Interface를 구현한 Class**로는 , **`HashMap`, `TreeMap`, `LinkedHashMap` 세 가지가 있고, 원조 Class 격인 `Hashtable` Class**가 있다.
+
+
+|Class|설명|
+|:--:|:--:|
+|Hashtable|**Data를 Hashtable에 담는 Class**로, **내부에서 관리하는 Hashtable 객체가 동기화**되어 있으므로, **동기화가 필요한 부분에서는 이 Class를 사용하는 것이 권장**된다.|
+|HashMap|**Data를 Hashtable에 담는 Class**로, **`Hashtable` Class와 다른 점은 `null`값을 허용한다는 것과, 동기화 되어 있지 않다는 것**이다.|
+|TreeMap|**`Red-Black Tree`에 Data**를 담는다. **`TreeSet`과 다른 점은 `Key`에 의해 순서가 정해진다는 것**이다.|
+|LinkedHashMap|**`HashMap`과 거의 동일**하며, **`이중 연결 리스트(Doubly-LinkedList)`라는 방식을 사용하여 Data를 담는다는 점만 다르다.**|
+
+
+### 이중 연결 리스트(Doubly-LinkedList) ???
+
+**`이중 연결 리스트(Doubly-LinkedList)`** 는 자료구조론에서 **앞, 뒤 Node에 대한 Link 정보를 가지고 있는 것**을 말한다.
+
+만약 **앞 Node의 Link 값이 `null`이거나 비어 있으면 가장 첫 Node임을 의미**하고,
+**뒤 Node의 Link 값이 `null`이거나 비어 있으면** **가장 마지막 Node임을 의미**한다.
