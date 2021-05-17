@@ -34,3 +34,33 @@
 
 ## Set Interface
 
+먼저 `Set` Interface에 대해 알아보면, **`Set` Interface는 중복이 없는 집합 객체를 만들때 유용하게 사용**된다.
+
+예를들어 **전체 학생 이름이 몇개 인지 확인하기 위해서 중복되는 이름을 제외**해야 하지만, **`Set` 객체에 Data를 저장**하면 **중복되는 Data는 원천적으로 삽입되지 않는다.**
+
+**`Set` Interface를 구현한 Class로는 `HashSet`, `TreeSet`, `LinkedHashSet` 세 가지**가 있다.
+
+
+|Class|설명|
+|:--:|:--:|
+|HashSet|Data를 **Hash Table에 저장하는 Class로 순서 없이 저장**한다.|
+|TreeSet|**Red-Black이라는 Tree 구조에 Data를 저장, 값에 따라 순서**가 정해진다.<br> Data를 담으면서 동시에 **정렬을 수행하여 `HashSet`보다 성능 상 느리다.**|
+|LinkedHashSet|**Hash Table에 Data를 저장**하는데, **저장된 순서에 따라 순서가 결정**된다.|
+
+## Red Black Tree??
+
+**`Red-Black Tree`** 란 **이진 트리 구조로 Data를 담는 구조**를 말하며 **아래와 같은 특징**이 있다.
+
+1. **각각의 노드는 검은색이나 붉은색** 이어야 한다.
+
+2. **가장 상위(root) 노드는 검은색**이다.
+
+3. **가장 말단(leaves) 노드는 검은색**이다.
+
+4. **붉은 노드는 검은 하위 노드만**을 가진다.
+
+5. **검은 노드는 붉은 상위 노드만**을 가진다.
+
+6. **모든 말단 노드로 이동하는 경로의 검은 노드 수는 동일**하다.
+
+![](https://images.velog.io/images/gillog/post/5e0daf53-8d83-4a43-a2f6-1dcf00f454e6/image.png)
