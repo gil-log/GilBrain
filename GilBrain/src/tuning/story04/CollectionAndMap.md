@@ -114,3 +114,5 @@
 
 만약 **앞 Node의 Link 값이 `null`이거나 비어 있으면 가장 첫 Node임을 의미**하고,
 **뒤 Node의 Link 값이 `null`이거나 비어 있으면** **가장 마지막 Node임을 의미**한다.
+
+![](https://images.velog.io/images/gillog/post/ae7bfe8c-40b8-4a49-8f53-fd3b5179a122/image.png)
