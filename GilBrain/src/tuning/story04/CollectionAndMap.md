@@ -116,3 +116,19 @@
 **뒤 Node의 Link 값이 `null`이거나 비어 있으면** **가장 마지막 Node임을 의미**한다.
 
 ![](https://images.velog.io/images/gillog/post/ae7bfe8c-40b8-4a49-8f53-fd3b5179a122/image.png)
+
+
+---
+
+## Queue Interface
+
+**`Queue`는 Data를 담아 두었다가 먼저 들어온 Data부터 처리하기 위해 사용**된다.
+
+예를 들면 **SMS와 같은 문자를 처리**할 때 **서버에 들어오는 순서대로 `Queue`에 저장**하고 **처음 요청한 Data부터 처리**하면 된다.
+
+<br>
+
+이때 **`List`도 순서가 있고, `Queue`도 순서가 있는데, `Queue`를 사용하는 이유**는, `List`의 **가장 큰 단점은 첫 번째 Data(0번 Data)를 지우면 그 다음 두 번째 Data(1번 Data)**부터 **마지막 Data까지 한 칸씩 옮기는 작업을 수행**해야 하므로, **Data가 많으면 많을 수록 Data를 지우는데 소요되는 시간이 증가되기 때문**이다.
+
+**`Queue` Interface를 구현한 Class는 두 가지**로 나뉘며, **`java.util` package에 속하는 `LinkedList`와 `PriorityQueue`는 일반적 목적의 `Queue` Class**이고, **`java.util.concurrent` package에 속하는 Class들은 `Concurrent Queue Class`**이다.
+
