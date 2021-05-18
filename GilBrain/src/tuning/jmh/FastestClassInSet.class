@@ -1,6 +1,47 @@
-package
+package com.tuning.jmh;
 
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.concurrent.TimeUnit;
+
+import org.open.jdk.jmh.annotations.BenchmarkMode;
+import org.open.jdk.jmh.annotations.GenerateMicroBenchmark;
+import org.open.jdk.jmh.annotations.Mode;
+import org.open.jdk.jmh.annotations.OutputTimeUnit;
+import org.open.jdk.jmh.annotations.Scope;
+import org.open.jdk.jmh.annotations.State;
+
+@State(Scope.Thread)
+@BenchmarkMode({ Mode.AverageTime })
+@OutputTimeUnit(TimeUnit.MICROSECONDS)
 public class FastestClassInSet {
+    int LOOP_COUNT = 1000;
+    Set<String> set;
+    String data = "gillogfastestsetimplementaions";
 
+    @GenerateMicroBenchmark
+    public void addHashSet() {
+        set = new HashSet<String>();
+        for(int loop = 0; loop < LOOP_COUNT; loop++) {
+            set.add(data+loop);
+        }
+    }
+    
+    @GenerateMicroBenchmark
+    public void addTreeSet() {
+        set = new TreeSet<String>();
+        for(int loop = 0; loop < LOOP_COUNT; loop++) {
+            set.add(data+loop);
+        }
+    }
 
+    @GenerateMicroBenchmark
+    public void addLinkedHashSet() {
+        set = new LinkedHashSet<String>();
+        for(int loop = 0; loop < LOOP_COUNT; loop++) {
+            set.add(data+loop);
+        }
+    }
 }
