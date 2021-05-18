@@ -132,3 +132,12 @@
 
 **`Queue` Interface를 구현한 Class는 두 가지**로 나뉘며, **`java.util` package에 속하는 `LinkedList`와 `PriorityQueue`는 일반적 목적의 `Queue` Class**이고, **`java.util.concurrent` package에 속하는 Class들은 `Concurrent Queue Class`**이다.
 
+|Class|설명|
+|:--:|:--:|
+|PriorityQueue|**Queue에 추가된 순서와 상관없이 먼저 생성된 객체가 먼저 나오도록 되어 있는 Queue**|
+|LinkedBlockingQueue|**저장할 Data의 크기를 선택적으로 정할 수 도 있는 FIFO기반 LinkNode를 사용하는 BlockingQueue**|
+|ArrayBlockingQueue|**저장되는 Data의 크기가 정해져 있는 FIFO기반의 BlockingQueue**|
+|PriorityBlockingQueue|**저장되는 Data의 크기가 정해져 있지 않고, 객체의 생성 순서에 따라서 순서가 저장**되는 BlockingQueue|
+|DelayQueue|**Queue가 대기하는 시간을 지정하여 처리**하도록 되어 있는 Queue|
+|SynchronousQueue|**put() method를 호출**하면, **다른 Thread에서 take() method가 호출될 때 까지 대기**하도록 되어있는 Queue, **해당 Queue에 저장되는 Data는 없다.**<br>**API에서 제공하는 대부분의 메소드는 0, null을 return**|
+
