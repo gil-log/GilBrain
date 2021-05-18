@@ -44,4 +44,12 @@ public class FastestClassInSet {
             set.add(data+loop);
         }
     }
+
+    @GenerateMicroBenchmark
+    public void addHashSetWithInitialSize() {
+        set = new HashSet<String>(LOOP_COUNT);
+        for(int loop = 0; loop < LOOP_COUNT; loop++) {
+            set.add(data+loop);
+        }
+    }
 }
