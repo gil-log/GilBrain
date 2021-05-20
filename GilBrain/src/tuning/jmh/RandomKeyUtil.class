@@ -1,0 +1,29 @@
+package com.tuning.jmh;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Random;
+import java.util.Set;
+
+public class RandomKeyUtil {
+
+    public static String[] generateRandomSetKeysSwap(Set<String> set) {
+        int size = set.size();
+        String[] result = new String[size];
+        Random random = new Random();
+        int maxNumber = size;
+        Iterator<String> iterator = set.iterator();
+        int resultPos = 0;
+        while (iterator.hasNext()) {
+            result[resultPos++] = iterator.next();
+        }
+        for(int loop=0;loop<size;loop++){
+            int randomNumberOne = random.nextInt(maxNumber);
+            int randomNumberTwo = random.nextInt(maxNumber);
+            String temp = result[randomNumberTwo];
+            result[randomNumberTwo] = result[randomNumberOne];
+            result[randomNumberOne] = temp;
+        }
+        return result;
+    }
+}
