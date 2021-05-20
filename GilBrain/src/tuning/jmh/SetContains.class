@@ -1,0 +1,64 @@
+package com.tuning.jmh;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Random;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.open.jdk.jmh.annotations.BenchmarkMode;
+import org.open.jdk.jmh.annotations.GenerateMicroBenchmark;
+import org.open.jdk.jmh.annotations.Mode;
+import org.open.jdk.jmh.annotations.OutputTimeUnit;
+import org.open.jdk.jmh.annotations.Scope;
+import org.open.jdk.jmh.annotations.State;
+import com.tuning.jmh.RandomKeyUtil;
+
+@State(Scope.Thread)
+@BenchmarkMode({ Mode.AverageTime })
+@OutputTimeUnit(TimeUnit.MICROSECONDS)
+public class SetContains {
+    int LOOP_COUNT = 1000;
+    Set<String> hashSet;
+    Set<String> treeSet;
+    Set<String> linkedHashSet;
+    String data = "gillogfastestsetimplementaions";
+    String []keys;
+    
+    @Setup(Level.Trial)
+    public void setUp() {
+        hashSet = new HashSet<String>();
+        treeSet = new TreeSet<String>();
+        linkedHashSet = new LinkedHashSet<String>();
+        for(int loop=0;loop<LOOP_COUNT;loop++) {
+            String tempData = data + loop;
+            hashSet.add(tempData);
+            treeSet.add(tempData);
+            linkedHashSet.add(tempData);
+        }
+        if(keys==null || keys.length != LOOP_COUNT) {
+            keys = generateRandomSetKeysSwap(hashSet);
+        }
+    }
+
+    @GenerateMicroBenchmark
+    public void containsHashSet() {
+        for(String key : keys) {
+            hashSet.contains(key);
+        }
+    }
+
+    @GenerateMicroBenchmark
+    public void containsTreeSet() {
+        for(String key : keys) {
+            treeSet.contains(key);
+        }
+    }
+
+    @GenerateMicroBenchmark
+    public void containsLinkedHashSet() {
+        for(String key : keys) {
+            linkedHashSet.contains(key);
+        }
+    }
+}
