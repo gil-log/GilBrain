@@ -1,10 +1,8 @@
 # 🙆‍♂️ import 🙇‍♂️
 
-<<<<<<< HEAD
 [자바 성능 튜닝 이야기[ProgrammingInsight-이상민]](http://www.yes24.com/Product/Goods/11261731)
 
 <br>
-=======
 [엑셀 Excel VLOOKUP함수, 원하는 값 찾을 사용[녹두장군]](https://mainia.tistory.com/5651)
 
 <br>

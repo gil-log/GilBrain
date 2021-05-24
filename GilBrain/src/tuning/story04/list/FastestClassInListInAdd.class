@@ -30,6 +30,7 @@ public class FastestClassInListInAdd {
         }
     }
     
+    
     @GenerateMicroBenchmark
     public void addVector() {
         vector = new Vector<Integer>();
