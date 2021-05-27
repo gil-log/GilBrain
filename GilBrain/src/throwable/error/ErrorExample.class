@@ -1,0 +1,16 @@
+package src.throwable.error;
+
+public class ErrorExample {
+
+    public static void gillog(String log) {
+        System.out.println(log);
+    }
+
+    public static void main(String[] args) {
+        try {
+            gillog("Error Test");
+        } catch (StackOverflowError e) {
+            System.out.println("Ooops!");
+        }
+    }
+}
