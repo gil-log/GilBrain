@@ -1,19 +1,23 @@
-
 public class StringBufferTestTwo {
     public static void main (String args[]) {
         StringBuffer sb = new StringBuffer();
 
+        // 기본 사용
         sb.append("GIL");
         sb.append("LOG");
         sb.append("GILLOG");
-
+        
+        // 이렇게도 가능
         sb.append("this")
         .append("way")
         .append("can")
         .append("work");
-
-        sb.append("ButDo"+"Not"+"ThisWay");
+        
+        // insert 사용
         sb.insert(1,"|||");
+
+        // 이렇게는 사용하면 StringBuffer 사용 효과 전혀 없음
+        sb.append("ButDo"+"Not"+"ThisWay");
         System.out.println(sb);
     }
 }

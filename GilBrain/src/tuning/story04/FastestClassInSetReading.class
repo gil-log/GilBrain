@@ -1,0 +1,64 @@
+package com.tuning.jmh;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.concurrent.TimeUnit;
+
+import org.open.jdk.jmh.annotations.BenchmarkMode;
+import org.open.jdk.jmh.annotations.GenerateMicroBenchmark;
+import org.open.jdk.jmh.annotations.Mode;
+import org.open.jdk.jmh.annotations.OutputTimeUnit;
+import org.open.jdk.jmh.annotations.Scope;
+import org.open.jdk.jmh.annotations.State;
+
+@State(Scope.Thread)
+@BenchmarkMode({ Mode.AverageTime })
+@OutputTimeUnit(TimeUnit.MICROSECONDS)
+public class FastestClassInSet {
+    int LOOP_COUNT = 1000;
+    Set<String> hashSet;
+    Set<String> treeSet;
+    Set<String> linkedHashSet;
+    String data = "gillogfastestsetimplementaions";
+    String []keys;
+    String result = null;
+    
+    @Setup(Level.Trial)
+    public void setUp() {
+        hashSet = new HashSet<String>();
+        treeSet = new TreeSet<String>();
+        linkedHashSet = new LinkedHashSet<String>();
+        for(int loop=0;loop<LOOP_COUNT;loop++) {
+            String tempData = data + loop;
+            hashSet.add(tempData);
+            treeSet.add(tempData);
+            linkedHashSet.add(tempData);
+        }
+    }
+
+    @GenerateMicroBenchmark
+    public void iterateHashSet() {
+        Iterator<String> iterator = hashSet.iterator();
+        while(iterator.hasNext()) {
+            result = iterator.next();
+        }
+    }
+    
+    @GenerateMicroBenchmark
+    public void iterateTreeSet() {
+        Iterator<String> iterator = treeSet.iterator();
+        while(iterator.hasNext()) {
+            result = iterator.next();
+        }
+    }
+
+    @GenerateMicroBenchmark
+    public void iterateLinkedHashSet() {
+        Iterator<String> iterator = linkedHashSet.iterator();
+        while(iterator.hasNext()) {
+            result = iterator.next();
+        }
+    }
+}
