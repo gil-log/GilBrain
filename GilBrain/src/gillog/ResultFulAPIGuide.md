@@ -470,5 +470,3 @@ HTTP/1.1 200
     , "created": "2021-06-22 08:50"
 }
 ```
-
-[https://meetup.toast.com/posts/92](https://meetup.toast.com/posts/92)
