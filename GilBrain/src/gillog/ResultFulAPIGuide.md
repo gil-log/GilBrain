@@ -11,7 +11,6 @@
 
 먼저 REST API가 무엇인지 아직 대략적으로 파악이 안된 경우 [여기](https://velog.io/write?id=c5767050-19aa-46da-b2df-5bba1b5982bb) 를 살펴보자.
 
-
 # REST API 설계시 유의 사항
 
 ## Core Rules
