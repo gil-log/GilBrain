@@ -24,7 +24,6 @@ class DfsGraph {
         // graph[0]
         // graph[1] -> 2 -> 3
         // graph[2] -> 1 -> 3 -> 4
-        // graph[3] -> 1 -> 2 -> 4 -> 5
         for(int i=0; i<this.nV+1; i++) {
             this.dfsGraph.add(new ArrayList<Integer>());
         }
