@@ -20,7 +20,5 @@ public class AMultipleB {
 
         int result = a * b;
 
-        System.out.println(result);
-
     }
 }
